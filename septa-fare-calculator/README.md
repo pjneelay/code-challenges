@@ -1,3 +1,18 @@
+
+## Browser Support:
+
+Browser like Mozilla Firefox support Jquery without local server whereas browsers like Chrome,Internet Explorer needs local server to run the application because Jquery(without local server) is not supported for security reasons.
+
+## Instructions for local server setUp:
+1.Download nodejs on the device where application is executed.
+2.In nodejs command prompt perform the following steps:
+ -npm install http-server -g
+ -http-server "web-application-path"
+ -IP address is obtained and with this IP address we can run the application on google chrome with local http server.
+  (For example IP address obtained is 127.0.0.1:8080 then type this address in the chrome browser to run the application on local http server)
+-Screenshots of application running on Mozilla firefox and chrome(using local http server)are attached in the screenshots folder.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # SEPTA Rail Fare Calculator Challenge
 
 Hello, hopeful Think Company development team member! 
