@@ -1,10 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>SEPTA Regional Rail Fare Calculator</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="script/script.js"></script>
+<title>SEPTA Regional Rail Fare Calculator</title>
 </head>
+
 <body>
-	
+
+<div class="center">
+
+<div class="align">
+<img src="img/SEPTA.svg" height="52" width="52" id="septaLogo">
+    <h1 class="fontStyle">Regional Rail Fares</h1>
+</div>
+
+<div class="segment" align="center">
+    <h2>Where are you going?</h2>
+    <select id="zones" class="dropDown" >
+        <option disabled selected value="0" >-- Choose an option --</option>
+        <option value="ccp_1">CCP/1</option>
+        <option value="zone_2">Zone 2</option>
+        <option value="zone_3">Zone 3</option>
+        <option value="zone_4">Zone 4</option>
+        <option value="nj">NJ</option>
+    </select>
+</div>
+
+<div class="segment" align="center">
+    <h2>When are you riding?</h2>
+    <select id="travelType" class="dropDown">
+        <option disabled selected value="0">-- Choose an option --</option>
+        <option value="weekday">Weekdays</option>
+        <option value="evening_weekend">Evening/Weekends</option>
+        <option value="anytime">Anytime</option>
+    </select>
+<br><br>
+<button id="hint">Need more Information?</button>
+<p id="info"></p>
+</div>
+
+<div class="segment" align="center">
+    <h2>Where will you purchase the fare?</h2>
+    <input type="radio" name="place" value="advance_purchase" checked><label>Station Kiosk</label><br>
+    <input type="radio" name="place" value="onboard_purchase" id="onboard"><label>Onboard</label>
+</div>
+
+<div class="segment" align="center">
+    <h2>How many rides will you need?</h2>
+        <input type="text" type="rideCount" id="rideCount" class="inputStyle" maxlength="5" align="middle"><br>
+</div>
+
+<div class="align">
+    <h1 align="center">Your fare will cost<br>
+        <span id="fare">$0.00</span>
+    </h1>
+</div>
+
+</div>
 </body>
+
 </html>
